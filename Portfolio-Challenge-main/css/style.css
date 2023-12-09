@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --darkBlue: #03273f;
+  --lightGray: rgb(173, 165, 165);
+  --projectCardSize: 200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.portfolio {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  margin: 20px;
+}
+
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.float-right {
+  position: absolute;
+  right: 0px;
+  margin-top: -60px;
+}
+
+nav a {
+  font-size: 30px;
+  text-decoration: none;
+  margin: 20px;
+  color: rgb(240, 231, 231);
+}
+
+nav a:hover {
+  color: rgba(155, 63, 63, 0.767);
+  font-weight: 700;
+
+
+  text-shadow: 5px 5px rgba(14, 13, 13, 1);
+}
+
+header {
+  background: var(--darkBlue);
+  height: 100px;
+
+}
+
+.hero-banner {
+  background: url("../images/02-hero-bg.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-banner div h2 {
+  color: var(--lightGray);
+  position: absolute;
+  font-size: 30px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-rows: auto;
+
+}
+
+.page-section {
+
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+
+
+
+}
+
+/* .page-section h2 {
+  font-size: 40px;
+
+} */
+
+.content {
+  border-left: 5px solid var(--darkBlue);
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100px;
+  align-items: center;
+  height: 100%;
+
+
+
+}
+
+.subCategory {
+  min-width: 300px;
+  width: 300px;
+}
+
+.subCategory h2 {
+  text-align: right;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+.content p {
+  margin-left: 20px;
+  width: 100%;
+
+
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-areas: 'mainProject mainProject'
+    'secondProject thirdProject'
+    'fourthProject fifthProject';
+}
+
+.workItem {
+  position: relative;
+  margin: 10px;
+  border: 5px solid var(--darkBlue);
+
+}
+
+.workItem:hover {
+  box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 1);
+  border: 5px solid red;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.subHeader {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  background: rgba(173, 216, 230, 0.685);
+
+  max-height: 150px;
+  width: 200px;
+  border: 1px solid #03273f;
+}
+
+.subHeader h5 {
+  font-weight: 500px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 5px;
+  color: var(--darkBlue);
+}
+
+.subHeaderContent {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.main-project-image {
+  background: url("../images/01-html-css-git-challenge-demo.png");
+  height: 300px;
+
+}
+
+.secondProject-project-image {
+  background: url("../images/02-run-buddy.jpg");
+
+}
+
+.thirdProject-project-image {
+  background: url("../images/02-portfolio-2.jpg");
+
+}
+
+.fourthProject-project-image {
+  background: url("../images/02-portfolio-3.jpg");
+
+}
+
+.fifthProject-project-image {
+  background: url("../images/02-portfolio-4.jpg");
+
+}
+
+.secondProject-project-image,
+.thirdProject-project-image,
+.fourthProject-project-image,
+.fifthProject-project-image {
+  height: var(--projectCardSize);
+
+}
+
+.main-project-image,
+.secondProject-project-image,
+.thirdProject-project-image,
+.fourthProject-project-image,
+.fifthProject-project-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+#mainProject {
+  grid-area: mainProject;
+
+}
+
+#secondProject {
+  grid-area: secondProject;
+}
+
+#thirdProject {
+  grid-area: thirdProject;
+}
+
+#fourthProject {
+  grid-area: fourthProject;
+}
+
+#fifthProject {
+  grid-area: fifthProject;
+}
+
+
+
+.contactMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 3rem;
+  height: 100%;
+  font-size: 30px;
+
+}
+
+.contactMenu a {
+  text-decoration: none;
+
+}
+
+@media screen and (max-width:768px) {
+
+  header {
+    display: none;
+  }
+
+  .subCategory {
+    display: none;
+  }
+
+  .content {
+    border: none;
+  }
+
+  .work-grid {
+    grid-template-areas: 'mainProject '
+      'secondProject '
+
+      'thirdProject'
+      'fourthProject'
+      'fifthProject'
+    ;
+  }
+
+
+}
