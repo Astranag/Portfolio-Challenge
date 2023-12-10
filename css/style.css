@@ -86,6 +86,10 @@ header {
   right: 20px;
 }
 
+.aboutMe {
+  display: flex;
+} 
+
 .page-wrapper {
   display: grid;
   grid-template-rows: auto;
