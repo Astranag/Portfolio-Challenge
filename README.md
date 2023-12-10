@@ -21,7 +21,7 @@ Bootcamp - Working With CSS Challenge: Portfolio
 
   ## Usage
 
-To observe the usability of this web app, you can review the updates made by opening the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. There, you will see the updated Web app of Horiseon aimed towards semantics and accessibility of the HTML and CSS codes. 
+To observe the usability of this Portfolio web app, you can review the updates made by opening the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. 
 
 
 ## Credits
