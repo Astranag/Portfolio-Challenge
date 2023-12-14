@@ -12,7 +12,8 @@ Bootcamp - Working With CSS Challenge: Portfolio
 * When the images of the applications are clicked, then the user is taken to that deployed application.
 * When the page is resized or viewed on various screens and devices, the layout is responsive and adapts to my viewport.
 
-   [Link to the deployed website](https://astranag.github.io/Portfolio-Challenge/)
+
+   Link to the deployed website: https://astranag.github.io/Portfolio-Challenge/
 
 
   ## Installation
@@ -23,6 +24,7 @@ Bootcamp - Working With CSS Challenge: Portfolio
 
 To observe the usability of this Portfolio web app, you can review the updates made by opening the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. 
 
+![Alt text](images/astranag.github.io_Portfolio-Challenge_.png)
 
 ## Credits
 
